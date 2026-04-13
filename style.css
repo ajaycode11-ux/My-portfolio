@@ -1,0 +1,667 @@
+html, body{
+    height: 100%;
+    overflow-x: clip;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'josefin Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+.hero{
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    min-height: 90vh;
+    width: 100%;
+    background-image: url(/images/bg_profile.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.content{
+    max-width: 600px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px #140606;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #141414;
+    background: linear-gradient(to top, #141313 10%, #242428 50%, #121416 90%);
+
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+} nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child{
+    display: inline-block;
+    width: 100%; 
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 0px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+ .about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.nav{
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+    border-radius: 5px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+
+} 
+button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+
+}
+.tittle h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+    align-content: center;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+
+}
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.contact-me{
+    width: 100%;
+    height: 200px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.skills-section { 
+    text-align: center; 
+    font-family: sans-serif; 
+    padding: 50px; 
+    color: #333; 
+    background: #191919;
+    h2{
+        color: white;
+        font-size: 75px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+    }
+}
+.subtitle { 
+    color: #fcfc;
+    margin-bottom: 40px; 
+    font-size: 16px;
+    line-height: 27px;
+    max-width: 600px; 
+    margin-inline: auto; 
+}
+
+.skills-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    text-align: left; 
+    
+}
+.skill-column{
+    padding: 20px 35px;
+    background: rgba(55, 54, 54, 0.3);
+    border-radius: 20px;
+}
+
+
+.skill-item { 
+    margin-bottom: 20px; 
+    position: relative; 
+    
+}
+.skill-info { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-bottom: 8px; 
+    color: #555; 
+}
+
+/* The Progress Bar */
+.progress-line { 
+    height: 2px; 
+    background: #ddd; 
+    width: 100%; 
+    position: relative; 
+}
+.fill { 
+    height: 2px; 
+    background: #f9004d; 
+    position: relative; 
+    animation: slideIn 1.5s ease-out;
+}
+
+/* The Dot at the end of the bar */
+.fill::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  background: #f9004d;
+  border-radius: 50%;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+
+}
+.end{
+    /* background: #141414;
+    background: linear-gradient(to top, #141313 10%, #242428 50%, #121416 90%); */
+    padding: 20px;
+    background: #101010;
+    text-align: center;
+    color: white;
+}
+.main {
+    width: 1130px;
+    max-width: 95%; /* Ensures it doesn't overflow small screens */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to stack on mobile */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Critical for the service cards to stack */
+    min-height: 400px;
+}
+
+/* --- ADD THESE MEDIA QUERIES AT THE VERY BOTTOM OF YOUR CSS FILE --- */
+
+/* For Tablets and smaller Desktops (max 1190px) */
+@media screen and (max-width: 1190px) {
+    .main {
+        width: 100%;
+        flex-direction: column; /* Stacks image and text vertically */
+        padding: 50px 20px;
+    }
+    .about-text {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .tittle h2 {
+        width: 100%;
+    }
+    .skills-section{
+        h2{
+            width: 100%;
+        }
+    }
+}
+
+/* For Mobile Phones (max 850px) */
+@media screen and (max-width: 850px) {
+    nav ul {
+        display: none; /* Hides menu links on mobile to prevent overlap */
+    }
+    .arrow{
+        width: 30px;
+        height: 30px;
+        border-left: 4px solid white;
+        border-bottom: 4px solid white;
+        margin-left: 35vw;
+        margin-top: 25%;
+        animation: bounce 2s infinite;
+    }
+    
+    h1 {
+        font-size: 50px; /* Shrinks large text */
+    }
+    .about img {
+        width: 300px; /* Resizes profile image */
+    }
+    .skills-grid { 
+    grid-template-columns: 1fr; /* Stacks the columns on mobile */
+    gap: 40px;
+  }
+  
+  .skills-section { padding: 20px; }
+}
+.about-text h2{
+    font-size: 40px;
+}
+.tittle h2{
+    font-size: 40px;
+}
+.skills-section h2{
+    font-size: 40px;
+}
+
+/* For Small Mobile Phones (max 650px) */
+@media screen and (max-width: 650px) {
+    .logo{
+        font-size: 25px;
+    }
+    .hero{
+        background: #101010;
+        
+
+    }
+    .content h1 {
+        font-size: 30px;
+        
+    }
+    h3{
+        font-size: 20px;
+    }
+    .newsletter form {
+        width: 100%;
+    }
+    /* Makes the subscribe button stack under the input on tiny screens */
+    .newsletter form input:last-child {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .newsletter form input:first-child {
+        padding-right: 15px;
+    }
+    footer p:nth-child(2) {
+        width: 100%;
+    }
+    .about-text h2{
+        font-size: 30px;
+    }
+    .tittle h2{
+        font-size: 30px;
+    }
+    .skills-section h2{
+        font-size: 30px;
+    }
+    .arrow{
+        width: 30px;
+        height: 30px;
+        border-left: 4px solid white;
+        border-bottom: 4px solid white;
+        margin-left: 38vw;
+        margin-bottom: 20%;
+        
+        animation: bounce 1.5s infinite;
+    }
+}
+
+
+
+
+
+
+/* ANIMATION */
+@keyframes slideIn {
+  from { width: 0; }
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0) rotate(-45deg);
+    }
+    50%{
+        transform: translateY(15px) rotate(-45deg);
+    }
+    100%{ 
+        transform: translateY(0) rotate(-45deg);
+    }
+}
+
+/* --- RESPONSIVE BREAKPOINT --- */
+
+
+
+
+/* Contact Section Styles */
+.contact {
+    padding: 100px 8%;
+    background: #101010;
+    /* height: 100vh; */
+}
+.contact h2{
+    color: white;
+}
+
+.contact .title h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap; /* Makes it responsive for mobile */
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #fcfc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.info-item i {
+    color: #f9004d;
+    font-size: 20px;
+}
+
+/* Form Inputs Styling */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #191919;
+    border: 1px solid #333;
+    outline: none;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-form .input-group {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #f9004d;
+}
+
+.contact-form > button {
+    cursor: pointer;
+    width: 100%;
+}
+
+ .foot {
+    width: 100%;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100px;  <-- Remove or change to min-height */
+}
+
+.foot p {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 60px 8%; /* Reduced padding for a cleaner look */
+    text-align: center;
+}
+
