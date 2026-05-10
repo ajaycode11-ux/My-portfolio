@@ -217,5 +217,19 @@
         </footer>
     </section>
     <p class="end">&copy;CopyRight 2025 My portfolio</p>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.skills-grid').forEach(grid => {
+            observer.observe(grid);
+        });
+    </script>
 </body>
 </html>

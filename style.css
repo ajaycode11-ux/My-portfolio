@@ -315,11 +315,13 @@ h5{
 }
 
 
+
 .skill-item { 
     margin-bottom: 20px; 
     position: relative; 
     
 }
+
 .skill-info { 
     display: flex; 
     justify-content: space-between; 
@@ -340,8 +342,12 @@ h5{
     height: 2px; 
     background: #f9004d; 
     position: relative; 
+}
+
+.skills-grid:hover .fill {
     animation: slideIn 1.5s ease-out;
 }
+
 
 /* The Dot at the end of the bar */
 .fill::after {
@@ -665,5 +671,12 @@ footer p:nth-child(2){
     font-weight: bold;
     padding: 60px 8%; /* Reduced padding for a cleaner look */
     text-align: center;
+}
+
+/* For smaller screens, trigger animation when element scrolls into view */
+@media screen and (max-width: 1190px) {
+    .skills-grid.in-view .fill {
+        animation: slideIn 1.5s ease-out;
+    }
 }
 
